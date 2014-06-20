@@ -1,7 +1,7 @@
 React-Cookbook
 ==============
 
-Recipes for making your React Components Awesome, or at least a little cleaner
+Recipes for making your React.js Components Awesome, or at least a little cleaner
 
 * [Basics](#basics)
    * [Use 'className' for class](#use-classname-for-class)
