@@ -37,7 +37,7 @@ render: function() {
 }
 ```
 
-[fiddle](http://jsfiddle.net/EwCAf/)
+[view fiddle](http://jsfiddle.net/EwCAf/)
 
 
 
@@ -59,7 +59,7 @@ render: function() {
 }
 ```
 
-[fiddle](http://jsfiddle.net/MBu9v/)
+[view fiddle](http://jsfiddle.net/MBu9v/)
 
 #### Use 'map' to cleanly iterate over arrays
 
@@ -75,7 +75,7 @@ render: function() {
   );
 }
 ```
-[fiddle](http://jsfiddle.net/ggVt6/)
+[view fiddle](http://jsfiddle.net/ggVt6/)
 
 #### Use 'classSet' to toggle classes
 ```
@@ -89,7 +89,7 @@ render: function() {
 }
 ```
 
-[fiddle](http://jsfiddle.net/v4Uwb/2/)
+[view fiddle](http://jsfiddle.net/v4Uwb/2/)
 
 #### ReactLink can be used for two-way data bindings
 
@@ -108,4 +108,4 @@ render: function() {
 }
 ```
 
-[fiddle](http://jsfiddle.net/vvS8F/)
+[view fiddle](http://jsfiddle.net/vvS8F/)
