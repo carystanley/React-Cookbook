@@ -109,3 +109,21 @@ render: function() {
 ```
 
 [view fiddle](http://jsfiddle.net/vvS8F/)
+
+#### reduce can be used for simple list filtering
+
+```
+return (
+  <ul>
+      {messages.reduce(function(messages, item) {
+        if (match(item, filter)) {
+          messages.push(<li>{item.title}</li>)
+        }
+        return messages;
+      }, [])}
+  </ul>
+);
+```
+
+[view fiddle](http://jsfiddle.net/qTQtD/)
+
