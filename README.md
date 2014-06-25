@@ -11,6 +11,7 @@ Recipes for making your React.js Components Awesome, or at least a little cleane
    * [Use 'map' to cleanly iterate over arrays](#use-map-to-cleanly-iterate-over-arrays)
    * [Use 'classSet' to toggle classes](#use-classset-to-toggle-classes)
    * [ReactLink can be used for two-way data bindings](#reactlink-can-be-used-for-two-way-data-bindings)
+   * [Reduce can be used for simple list filtering](#reduce-can-be-used-for-simple-list-filtering)
 
 
 ### Basics
@@ -110,7 +111,7 @@ render: function() {
 
 [view fiddle](http://jsfiddle.net/vvS8F/)
 
-#### reduce can be used for simple list filtering
+#### Reduce can be used for simple list filtering
 
 ```
 return (
