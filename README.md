@@ -128,3 +128,60 @@ return (
 
 [view fiddle](http://jsfiddle.net/qTQtD/)
 
+#### Use bind to map specifiic parameters for event handlers
+
+```
+		onClick: function(value, e) {
+			e.preventDefault();
+			this.props.onChange({
+				choice: value
+			}, true);
+			this.setState({
+				choice: value
+			});
+		},
+
+		render: function() {
+			var self = this,
+				cx = React.addons.classSet,
+				choices = this.props.choices,
+				selected = this.state.choice;
+
+			return (
+				<ul className="Choices">
+					{choices.map(function(choice) {
+						return <li key={choice.value} className={cx({'Selected': (choice.value === selected)})}><a href='#' onClick={self.onClick.bind(null, choice.value)}>{choice.label}</a></li>;
+					})}
+				</ul>
+			);
+		}
+```
+
+> Note: bind should have "null" as its first parameter, React will automatically re-bing with "this"
+
+[view fiddle](http://jsfiddle.net/1w57b59n/3/)
+
+#### Handler callback functions can be used a props to get events for subcomonents
+
+```
+		onClick: function(value, e) {
+			e.preventDefault();
+			this.props.onChange({
+				choice: value
+			}, true);
+			this.setState({
+				choice: value
+			});
+		},
+
+
+...
+
+    <div>
+        <div>{'Selected: ' + this.state.selected}</div>
+        <Chooser choices={choices} onChange={this.choiceChange} />
+    </div>
+```
+
+[view fiddle](http://jsfiddle.net/1w57b59n/3/)
+
