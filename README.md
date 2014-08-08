@@ -12,7 +12,8 @@ Recipes for making your React.js Components Awesome, or at least a little cleane
    * [Use 'classSet' to toggle classes](#use-classset-to-toggle-classes)
    * [ReactLink can be used for two-way data bindings](#reactlink-can-be-used-for-two-way-data-bindings)
    * [Reduce can be used for simple list filtering](#reduce-can-be-used-for-simple-list-filtering)
-
+   * [Use bind to map specifiic parameters for event handlers](#use-bind-to-map-specifiic-parameters-for-event-handlers)
+   * [Handler callback functions can be used a props to get events for subcomonents](#handler-callback-functions-can-be-used-a-props-to-get-events-for-subcomonents)
 
 ### Basics
 
