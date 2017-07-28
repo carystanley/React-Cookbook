@@ -70,8 +70,8 @@ render: function() {
   var list = ['one', 'two', 'three'];
   return (
     <ul>
-      {list.map(function(item) {
-        return <li>{item}</li>
+      {list.map(function(item, idx) {
+        return <li key={idx}>{item}</li>
       })}
     </ul>
   );
@@ -81,8 +81,10 @@ render: function() {
 
 #### Use 'classSet' to toggle classes
 ```
+var cx = React.addons.classSet;
+
+...
 render: function() {
-  var cx = React.addons.classSet;
   return <div className={cx({
     'message': true,
     'message-important': this.props.isImportant,
@@ -158,7 +160,7 @@ return (
 		}
 ```
 
-> Note: bind should have "null" as its first parameter, React will automatically re-bing with "this"
+> Note: bind should have "null" as its first parameter, React will automatically re-bind with "this"
 
 [view fiddle](http://jsfiddle.net/1w57b59n/3/)
 
